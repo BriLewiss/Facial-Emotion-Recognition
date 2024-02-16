@@ -102,7 +102,7 @@ model.add(Conv2D(224, (3, 3), padding='same', kernel_regularizer=l2(0.01)))
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-# Note: No dropout after this layer as per your hyperparameters
+# No dropout after this layer
 
 model.add(Flatten())
 
